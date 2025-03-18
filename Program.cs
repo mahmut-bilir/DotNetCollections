@@ -8,3 +8,7 @@ for (int i = 0; i < numbers.Length; i++)
 {
     Console.WriteLine(numbers[i]);
 }
+
+int[,] matrix = { { 1, 8, 7 }, { 2, 4, 6 } };
+Console.WriteLine("Matrix");
+Console.WriteLine(matrix[0, 1]);
