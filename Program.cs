@@ -51,3 +51,13 @@ foreach (var student in students)
 
     Console.WriteLine($"No:{student.Key}, Name: {student.Value}");
 }
+
+HashSet<int> elements = new HashSet<int>
+{1,4,7,2,5,8,3,6,9,2,5,8,3,6,9,1,4,7,};
+elements.Add(0);
+elements.Add(3);
+Console.WriteLine("HashSet:");
+foreach (var element in elements)
+{
+    Console.WriteLine(element);
+}
