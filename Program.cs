@@ -19,3 +19,13 @@ jagged[1] = new int[] { 2, 5, 8 };
 jagged[2] = new int[] { 3, 6, 9 };
 Console.WriteLine("Jagged array");
 Console.WriteLine(jagged[1][1]);
+
+List<string> names = new List<string> { "Mahmut", "Mesut", "Ömer" };
+names.Add("Mehmet");
+names.Remove("Mesut");
+names.Insert(1, "Can");
+
+foreach (var name in names)
+{
+    Console.WriteLine(name);
+}
