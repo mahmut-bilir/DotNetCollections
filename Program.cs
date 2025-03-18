@@ -29,3 +29,25 @@ foreach (var name in names)
 {
     Console.WriteLine(name);
 }
+
+Dictionary<int, string> students = new Dictionary<int, string>
+{
+
+    {100,"Mahmut"},
+    {101,"Mesut"},
+    {102,"Ömer"}
+};
+
+students[103] = "İbrahim";
+
+Console.WriteLine("Dictionary");
+if (students.ContainsKey(102))
+{
+    Console.WriteLine("102 numaralı öğrenci: " + students[102]);
+}
+Console.WriteLine("Students List:");
+foreach (var student in students)
+{
+
+    Console.WriteLine($"No:{student.Key}, Name: {student.Value}");
+}
